@@ -1,0 +1,11 @@
+nav {
+    .sidebarLists {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .sidebarLink {
+            text-decoration: none;
+        }
+    }
+}
