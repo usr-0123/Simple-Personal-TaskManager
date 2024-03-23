@@ -1,3 +1,10 @@
+// 100C0D
+// 013328
+// CC8B65
+// ECD3D2
+h1 {
+    color: azure;
+}
 .newTaskForm {
     display: flex;
     flex-direction: column;
@@ -5,7 +12,7 @@
     gap: 10px;
     padding: 10px;
     border-radius: 13px;
-    background-color: #d1d1d1;
+    background-color: #CC8B65;
     width: 30%;
 
     .newTaskFormName {
@@ -17,6 +24,8 @@
             border-radius: 13px;
             border: none;
             width: 100%;
+            background-color: #ECD3D2;
+            color: #000;
         }
     }
 
@@ -28,19 +37,22 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            background-color: #6d6d6d;
+            background-color: #013328;
             padding: 10px;
             border-radius: 16px;
             gap: 10px;
 
             label {
                 font-weight: 1000;
+                color: azure;
             }
 
             input {
                 padding: 10px;
                 border-radius: 13px;
                 border: none;
+                background-color: #ECD3D2;
+                // color: red;
             }
         }
     }
@@ -54,6 +66,7 @@
             width: 100%;
             border-radius: 13px;
             border: none;
+            background-color: #ECD3D2;
         }
     }
 
@@ -61,6 +74,7 @@
         padding: 10px;
         border-radius: 13px;
         border: none;
-        background-color: #fff;
+        background-color: #ECD3D2;
+        color: #000;
     }
 }

@@ -1,3 +1,10 @@
+.maj {
+    color: #100C0D
+    #013328
+    #CC8B65
+    #ECD3D2
+}
+
 .tasks {
     display: flex;
     flex-direction: column;
@@ -14,10 +21,11 @@
             display: flex;
             flex-direction: column;
             padding: 10px;
-            background-color: #ffffff;
+            background-color: #CC8B65;
             display: flex;
-            height: 300px;
+            height: fit-content;
             width: 300px;
+            border-radius: 13px;
 
             label {
                 display: flex;
@@ -27,6 +35,12 @@
                 gap: 10px;
                 font-weight: 900;
                 font-size: 20px;
+
+                .tasksListDivTop {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
                 
             }
 
@@ -34,7 +48,29 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                .tasksListDivDataDate {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 13px;
+        border: none;
+        width: 100px;
     }
 }

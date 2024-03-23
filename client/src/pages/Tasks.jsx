@@ -95,14 +95,21 @@ const Tasks = () => {
         {tasks.map(task => (
           <div className='tasksListDiv' key={task.id}>
             <label>
+              <div className='tasksListDivTop'>                
               <input type="radio" checked={task.done} onChange={() => handleTaskDone(task.id)} />
-              <button onClick={() => toggleTaskContent(task.id)}>Show all details</button>
+              <p>{task.done ? "Completed" : "Pending"}</p>
+                <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+              </div>
+              <div className='tasksListDivTop'>
+              <button onClick={() => toggleTaskContent(task.id)}>More</button>
               <p onClick={() => setSelectedTask(task.id)}>{task.taskName}</p>
-              <p>Status: {task.done ? "Completed" : "Not Completed"}</p>
+              </div>
+              <div className='tasksListDivDataDate'>
+                <p style={{fontSize:"15px", fontWeight:"550"}}>From: {task.beginDate}</p>
+                <p style={{fontSize:"15px", fontWeight:"550"}}>To: {task.endDate}</p>
+                </div>
             </label>
-            <button onClick={() => setEditMode(task.id)}>Edit</button>
-            <button onClick={() => handleUndoTaskDone(task.id)}>Undo</button>
-            <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+
             {editMode === task.id && (
               <div>
                 <input
@@ -123,6 +130,7 @@ const Tasks = () => {
                 <button onClick={handleSaveChanges}>Save Changes</button>
               </div>
             )}
+
             {task.showFullContent && (
               <div className='tasksListDivData'>
                 <input
@@ -133,14 +141,20 @@ const Tasks = () => {
                   autoFocus
                 />
 
-                <p>From: {task.beginDate}</p>
-                <p>To: {task.endDate}</p>
+                
+
+                
                 <p style={{
                   backgroundColor:"#d1d1d1",
                   padding:"10px",
                   borderRadius:"13px"
                 }}>{task.comment}</p>
+                <div className='buttons'>
+                  <button onClick={() => handleUndoTaskDone(task.id)}>Pending</button>
+                  <button onClick={() => setEditMode(task.id)}>Edit</button>
+                </div>
               </div>
+              
             )}
           </div>
         ))}
