@@ -1,40 +1,8 @@
-.navbar {
+.app {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    border-radius: 16px;
-    padding: 10px;
-    background-color: #8d8d8d;
-
-    span {
-        font-size: 20px;
-        font-weight: bold;
-        width: 50%;
-    }
-
-    .search {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 50%
-    }
-}
-.body {
-    display: flex;
-    padding: 10px;
     gap: 20px;
-
-    .sidebar {
-        padding: 20px;
-        border-radius: 16px;
-        background-color: #8d8d8d;
-        width: 30%;
-    }
-
-    .container {
-        padding: 10px;
-        border-radius: 16px;
-        width: 70%;
-        background-color: #8d8d8d;
-    }
+    padding: 10px;
+    background-color: #797979;
 }
