@@ -3,7 +3,7 @@
 Task Manager is a simple web application built with React that allows users to manage their tasks efficiently. With Task Manager, users can create new tasks, mark tasks as completed, and delete tasks as needed.
 ## Preview
 
-![Preview](/public/Preview.png)
+![Preview](/client/public/Preview.png)
 
 ## Features
 
